@@ -14,7 +14,7 @@ def view_books(books):
 
 def borrow_books(bookList):
     for i in bookList:
-        print(f"{i}: {bookList[i]}")
+        print(f"{i} : {bookList[i]}")
 
     user_pick = input("Enter the book you want: ")
 
@@ -26,8 +26,18 @@ def borrow_books(bookList):
      
     return bookList 
 
-def return_book():
-    pass
+def return_book(bookList):
+    for i in bookList:
+        print(f"{i} : {bookList[i]}")
+
+    user_return = input("Enter book name: ")
+
+    for i in bookList:
+        if user_return == i:
+            bookList[i] += 1
+            print("Succesfully returned..!")
+            break
+    return bookList
 
 def exit():
     raise SystemExit("System closed..!")
@@ -69,6 +79,6 @@ while True:
         case 2:
             borrow_books(bookList=data)
         case 3:
-            return_book()
+            return_book(bookList= data)
         case 4:
             exit()
