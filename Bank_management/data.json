@@ -14,5 +14,13 @@
         "Pin": 5678,
         "AccountNo.": "F*9wg19",
         "Balance": 0
+    },
+    {
+        "Name": "Rani",
+        "Age": 19,
+        "Email": "rani@gmail.com",
+        "Pin": 3412,
+        "AccountNo.": "K6GS1#7",
+        "Balance": 9000
     }
 ]
