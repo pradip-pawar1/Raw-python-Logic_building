@@ -103,7 +103,65 @@ class Bank:
             print(f"{i} : {userdata[0][i]}")
 
     def updateinfo(self):
-        pass
+        accnumber = input("Enter your account number: ")
+        pin = int(input("Enter the pin: "))
+
+        userdata = [i for i in Bank.data if i["AccountNo."]== accnumber and i["Pin"]==pin]
+
+        if userdata == False:
+            print("Sorry no data found")
+        else:
+            print(f"You cannot change \n1. Age \n2.Account No. \n3. Balance")
+            print("Fill the detail for change else leave it empty.")
+
+            newdata = {
+                "Name": input("Enter new name or enter to skip: "),
+                "Email": input("Enter the new email or enter to skip: "),
+                "Pin": input("Enter new pin or enter to skip: ")
+            }
+
+            if newdata["Name"] == "":
+                newdata["Name"] = userdata[0]['Name']
+            if newdata["Email"] == "":
+                newdata["Email"] = userdata[0]['Email']
+            if newdata["Pin"] == "":
+                newdata["Pin"] = userdata[0]['Pin']
+
+            newdata["Age"] = userdata[0]["Age"]
+            newdata["Balance"] = userdata[0]["Balance"]
+            newdata["AccountNo."] = userdata[0]["AccountNo."]
+
+            if type(newdata["Pin"]) == str:
+                newdata["Pin"] == int(newdata["Pin"])
+            
+            for i in newdata:
+                if newdata[i] == userdata[0][i]:
+                    continue
+                else:
+                    userdata[0][i] = newdata[i]
+
+            Bank.__update()
+            print("Details updated succesfully")
+
+    def delete(self):
+        accnumber = input("Enter your account number: ")
+        pin = int(input("Enter the pin: "))
+
+        userdata = [i for i in Bank.data if i["AccountNo."]== accnumber and i["Pin"]==pin]
+
+        if userdata == False:
+            print("No data found")
+        else:
+            check = input("Enter y if you want to delete, else n for not deleting: ")
+            if check == 'n' or check == 'N':
+                print("By-passed")
+            else:
+                index = Bank.data.index(userdata[0])
+                Bank.data.pop(index)
+                print("Account delete succesfully...")
+                Bank.__update()
+
+
 
 
 user = Bank()
@@ -135,3 +193,6 @@ if check == 4:
 
 if check == 5:
     user.updateinfo()
+
+if check == 6:
+    user.delete()

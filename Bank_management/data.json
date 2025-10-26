@@ -1,18 +1,10 @@
 [
     {
-        "Name": "pradip",
+        "Name": "Pradip Pawar",
         "Age": 20,
         "Email": "pradip@gmail.com",
-        "Pin": 1234,
+        "Pin": "1236",
         "AccountNo.": "9V0rH&6",
-        "Balance": 0
-    },
-    {
-        "Name": "Rohit",
-        "Age": 26,
-        "Email": "rohit@gmail.com",
-        "Pin": 5678,
-        "AccountNo.": "F*9wg19",
         "Balance": 0
     },
     {
