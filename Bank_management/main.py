@@ -92,6 +92,20 @@ class Bank:
                 Bank.__update()
                 print("Amount withrawed sucessfully.")
 
+
+    def showdetails(self):
+        accnumber = input("Enter your account number: ")
+        pin = int(input("Enter the pin: "))
+
+        userdata = [i for i in Bank.data if i["AccountNo."]== accnumber and i["Pin"]==pin]
+        print("\nYour information is\n\n")
+        for i in userdata[0]:
+            print(f"{i} : {userdata[0][i]}")
+
+    def updateinfo(self):
+        pass
+
+
 user = Bank()
 
 print("Press 1: Create Account")
@@ -115,3 +129,9 @@ if check == 2:
 
 if check == 3:
     user.withrawlMoney()
+
+if check == 4:
+    user.showdetails()
+
+if check == 5:
+    user.updateinfo()
