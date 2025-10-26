@@ -73,6 +73,25 @@ class Bank:
                 Bank.__update()
                 print("Amount deposited sucessfully.")
 
+    def withrawlMoney(self):
+        accnumber = input("Enter your account number: ")
+        pin = int(input("Enter the pin: "))
+
+        userdata = [i for i in Bank.data if i["AccountNo."]== accnumber and i["Pin"]==pin]
+
+        if userdata == False:
+            print("Sorry no data found!")
+        else:
+            amount = int(input("Enter the deposit amount: "))
+            if amount > userdata[0]["Balance"]:
+                print("Sorry, you don't have enough balance!")
+
+            else:
+                # print(userdata)
+                userdata[0]["Balance"] -= amount
+                Bank.__update()
+                print("Amount withrawed sucessfully.")
+
 user = Bank()
 
 print("Press 1: Create Account")
@@ -91,5 +110,8 @@ except ValueError as err:
 if check == 1:
     user.createaccount()
 
-elif check == 2:
+if check == 2:
     user.depositMoney()
+
+if check == 3:
+    user.withrawlMoney()
