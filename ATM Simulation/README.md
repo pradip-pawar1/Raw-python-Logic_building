@@ -1,76 +1,89 @@
-# 🏦 Simple ATM System (Python)
+# 🏦 ATM System - Python
 
-A beginner-friendly **ATM Simulation** program written in raw Python.  
-This project is designed to strengthen your **logic-building skills** and reinforce **function-based programming** concepts.
+A beginner-friendly ATM simulation written in Python, designed to reinforce core programming concepts such as functions, control flow, and error handling. This project provides a practical example of building a simple banking system with a focus on secure login, transaction validation, and program termination.
+
+## Overview
+
+This ATM system allows users to log in using a PIN, check their balance, deposit money, and withdraw funds. It emphasizes secure input validation, exception handling, and clean code structure, making it ideal for learners to strengthen their understanding of function design and control flow.
+
+## Features
+
+- Secure PIN login with 3 attempts
+- Balance inquiry feature
+- Money deposit and withdrawal with validation
+- Proper handling of insufficient balance
+- Graceful system exit using exception handling
+- Memory of account balance throughout the session
+
+## How It Works
+
+1. The user is prompted to enter a PIN for authentication.
+2. After successful login, the menu options are displayed:
+   - Check current balance
+   - Deposit money
+   - Withdraw money
+   - Exit the system
+3. The program continuously prompts for operations until the user chooses to exit.
+4. All transactions update in real-time with validation to prevent errors such as overdraft.
+5. The program terminates gracefully, providing a clear exit message.
+
+## Technologies Used
+
+| Library        | Purpose                               |
+|----------------|---------------------------------------|
+| Python Standard Library | Basic programming constructs, control flow |
+
+## Usage Instructions
+
+1. Save the code in a Python file, e.g., `atm_system.py`.
+2. Run the program using the command:
+```
+python main.py
+```
+
+3. Follow the on-screen prompts to authenticate and perform banking operations.
+
+## Example Interaction
+
+```
+Enter the pin: 1234
+Choose 1: Check Balance
+Choose 2: Deposit Money
+Choose 3: Withdraw Money
+Choose 4: Exit
+
+Enter Your choice: 2
+Enter amount: 1000
+Your 1000 RS is added...
+
+Choose 1: Check Balance
+Enter Your choice: 1
+Your current balance is: 6000 RS...
+```
+
+
+## Project Structure
+
+```
+atm_simulation/  
+├── atm_system.py    # Main program file
+```
+
+
+## Future Enhancements
+
+- Implement a graphical user interface (GUI)
+- Add account management for multiple users
+- Record transaction history
+- Enhance security with hashed PIN storage
+- Integrate with real banking APIs for practical use
+
+## Author
+
+**Pradip Pawar**  
+Exploring Python and building practical projects.  
+[GitHub Profile](https://github.com/pradip-pawar1)
 
 ---
 
-## ⚙️ Features
-
-- Secure **PIN-based login** system (3 attempts allowed)  
-- **Deposit** and **Withdraw** functionalities  
-- Real-time **Balance Check**  
-- Proper validation for:
-  - Incorrect PINs  
-  - Insufficient balance  
-  - Clean exit using custom error handling (`SystemExit`)  
-
----
-
-## 🧠 Concepts Covered
-
-- Function design and parameter passing  
-- Use of `global` variables for maintaining program state  
-- Control flow using `while` and `match-case`  
-- Error handling and safe program termination  
-- Basic input/output formatting  
-
----
-
-## 🪜 How It Works
-
-1. The user enters a **PIN** to log in (default PIN: `1234`).  
-2. After successful login, the user can:
-   - Check their current balance  
-   - Deposit money  
-   - Withdraw money  
-   - Exit the system  
-3. The system maintains the balance in memory using a global variable.  
-4. The program terminates when the user chooses to exit.
-
----
-
-## 💻 Code Structure
-
-| Function | Purpose |
-|-----------|----------|
-| `check_balance()` | Updates and returns the current balance |
-| `deposit_money()` | Handles money deposit |
-| `withraw_money()` | Handles withdrawal with validation |
-| `login()` | Authenticates user with 3 PIN attempts |
-| `exit()` | Stops program using `SystemExit` exception |
-
----
-
-## ▶️ How to Run
-
-1. Make sure Python (3.10+) is installed.  
-2. Save the code in a file, for example: `atm_system.py`  
-3. Open terminal or command prompt and run:
-
-   ```bash
-   python atm_system.py
-
-## 📘 Example Interaction
-Enter the pin: 1234<br>
-Choose 1: Check Balance<br>
-Choose 2: Deposit Money<br>
-Choose 3: Withdraw Money<br>
-Choose 4: Exit<br>
-Enter Your choice: 2<br>
-Enter amount: 1000<br>
-Your 1000RS is added...<br>
-<br>
-Choose 1: Check Balance<br>
-Enter Your choice: 1<br>
-Your current balance is: 6000RS...<br>
+*This project is part of the Raw Python Logic-building series, aimed at developing strong programming fundamentals for beginners.*
