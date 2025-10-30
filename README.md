@@ -61,3 +61,38 @@ Each project adds a new layer of understanding — moving from raw logic to stru
 ---
 
 ## Repository Structure
+```bash
+📁 Raw-python-Logic_building
+│
+├── Word_Guess_Game/
+│ └── README.md
+│
+├── ATM_Simulation/
+│ └── README.md
+│
+├── Library_Management_System/
+│ └── README.md
+│
+├── Bank_Management_System/
+│ └── README.md
+│
+└── README.md # This file
+```
+---
+
+## How to Use
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/pradip-pawar1/Raw-python-Logic_building.git
+   ```
+2. Navigate into any project folder:
+```bash
+cd Raw-python-Logic_building/Library_Management_System
+```
+
+3. Run the main script:
+```bash
+python main.py
+```
+---
+
