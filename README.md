@@ -1,11 +1,63 @@
-# Raw-python-Logic_building
-This repo is specifically build for those who wants to improve their logic-building in python, by building easy but useful projects.
+# Raw Python Logic-building 🧠
 
-## Project list
+## Overview
+This repository is a collection of **pure Python projects** created with the goal of strengthening **problem-solving, logical reasoning, and programming fundamentals** — all without using any external libraries (except where required for specific functionality).
 
-| Project Name | Project Link |
-|---------------|--------------|
-| Word Guess Game | [Open Folder](./Word_Guess_Game) |
-| ATM Simulation | [Open Folder](./ATM_Simulation) |
-| Library Management System | [Open Folder](./Library_management) |
-| Bank Management | [Open Folder](./OPPs%20projects/Bank_management/)
+Each project focuses on applying **core Python concepts** such as control flow, functions, data structures, file handling, and later transitions into **Object-Oriented Programming (OOP)** principles.  
+
+The repository is continuously evolving as I explore new ideas and convert them into practical mini-projects.
+
+---
+
+## Objectives
+- Strengthen logical thinking using raw Python.  
+- Understand the step-by-step structure of problem-solving.  
+- Gradually transition from procedural coding to OOP.  
+- Build real-world simulations through console-based applications.  
+- Develop a strong programming foundation before moving to frameworks and data science tools.
+
+---
+
+## Project List
+
+| Project Name | Description | Link |
+|---------------|--------------|------|
+| **Word Guess Game** | Two-player word chain game where each player must form valid words within a time limit. Demonstrates input validation, loops, and condition handling. | [Open](./Word_guess_game/README.md) |
+| **ATM Simulation** | Simulates basic ATM operations such as deposit, withdrawal, and balance checking. Reinforces file handling, logic flow, and user interaction. | [Open](./ATM_Simulation/README.md) |
+| **Library Management System** | A simple command-line library system for viewing, borrowing, and returning books. Built using dictionaries and conditional logic. | [Open](./Library_management/README.md) |
+| **Bank Management System (OOP)** | First OOP-based project in the series. Implements account creation, deposits, withdrawals, and updates using class-based design and JSON storage. | [Open](./OPPs_projects/Bank_management/README.md) |
+
+---
+
+## Technical Highlights
+- Built entirely using **Core Python (No frameworks)**.  
+- Uses **functions, loops, conditionals**, and **exception handling** to simulate real systems.  
+- Later projects introduce **classes, objects, and data encapsulation**.  
+- Demonstrates the use of **JSON** for persistent storage.  
+- Each project is **self-contained** and can be run independently.
+
+---
+
+## Learning Progression
+The structure of this repository reflects my Python learning path:
+
+1. **Procedural Logic Phase** – Developing logical thinking through small, independent programs.  
+2. **Functional Phase** – Grouping logic into functions for better organization.  
+3. **Object-Oriented Phase** – Building complete systems using classes and encapsulated data.  
+
+Each project adds a new layer of understanding — moving from raw logic to structured program design.
+
+---
+
+## Example Topics Covered
+- Loops and Conditional Statements  
+- String and Dictionary Operations  
+- Functions and Modular Programming  
+- File I/O with JSON  
+- Object-Oriented Programming  
+- Exception Handling  
+- User Interaction via CLI  
+
+---
+
+## Repository Structure
