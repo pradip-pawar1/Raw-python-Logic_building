@@ -96,3 +96,18 @@ python main.py
 ```
 ---
 
+## Future Roadmap
+
+- Add small AI logic-based projects (e.g., basic chatbots, recommendation demos).
+- Integrate file-based authentication systems.
+- Expand into data-driven mini projects using Pandas and JSON.
+- Continue transitioning toward larger OOP and modular designs.
+---
+
+## Author
+
+**Pradip Pawar** <br>
+Creator of the Raw Python Logic-building Series
+GitHub: [pradip-pawar1](https://github.com/pradip-pawar1)
+
+*Built to strengthen Python fundamentals through practical implementation*

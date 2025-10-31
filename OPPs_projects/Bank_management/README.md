@@ -39,7 +39,7 @@ This is the **first OOP project** in the **Raw Python Logic-building** series, d
 
 2. **Menu Options**  
    Upon execution, the user is presented with options:
-```
+```yaml
     Press 1: Create Account
     Press 2: Deposit money
     Press 3: Withdraw money
@@ -162,7 +162,7 @@ Please note your Account No.
 ---
 
 ### Project Structure
-```bach
+```bash
 📁 Bank Management System (OOP)
  ├── bank_app.py            # Main Python script
  ├── data.json              # Stores all user data
@@ -175,7 +175,7 @@ Please note your Account No.
 1. Clone or download the repository.
 2. Navigate to the project folder.
 3. Run the file:
-```
+```bash
 python main.py
 ```
 ---
@@ -189,17 +189,18 @@ python main.py
 - Option to export account statements.
 ---
 
+## Project List
+
+| Project Name | Description | Link |
+|---------------|--------------|------|
+| **Word Guess Game** | Two-player word chain game where each player must form valid words within a time limit. Demonstrates input validation, loops, and condition handling. | [Open](../../Word_guess_game) |
+| **ATM Simulation** | Simulates basic ATM operations such as deposit, withdrawal, and balance checking. Reinforces file handling, logic flow, and user interaction. | [Open](../../ATM_Simulation) |
+| **Library Management System** | A simple command-line library system for viewing, borrowing, and returning books. Built using dictionaries and conditional logic. | [Open](../../Library_management) |
+
+
 ## Author
 
 **Pradip Pawar**
 
 Raw Python Logic-building Series — OOP Edition
 GitHub: **[Raw-python-Logic_building](https://github.com/pradip-pawar1/Raw-python-Logic_building)**
-
-```yaml
-
----
-
-Would you like me to **append an “OOP Learning Reflection”** section at the end (e.g., what you learned about class methods, encapsulation, etc.) — written in your tone, so it looks natural in your repo?  
-It’ll make the README feel personal and educational.
-```

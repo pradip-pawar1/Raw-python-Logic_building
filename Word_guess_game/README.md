@@ -36,7 +36,7 @@ The game emphasizes fast reasoning, input validation, and strict adherence to ch
 | pyenchant  | Dictionary word validation    |
 
 ## Example Run
-```
+```yaml
 Player1 wins the toss!
 
 Player1, enter your word: apple
@@ -57,19 +57,19 @@ Any rule break or timeout — automatic loss for that player.
 ## Installation & Usage
 
 1. **Install Dependencies:**
-```
+```bash
 pip install pyenchant
 ```
 
 2. **Run the Program:**
-```
+```bash
 python main.py
 ```
 
 
 
 ## Project Structure
-```
+```bash
 word-guess-game/
 ├── main.py # Game logic
 ├── best_of_3.json # Match records
@@ -89,11 +89,13 @@ word-guess-game/
 
 This game is part of the **[Raw-python-Logic_building](https://github.com/pradip-pawar1/Raw-python-Logic_building)** repository, featuring beginner-friendly Python logic projects.
 
-| Project                  | Description                         |
-|--------------------------|-------------------------------------|
-| Word Guess Game          | Two-player timed vocabulary game    |
-| ATM Simulation           | Banking operations simulation       |
-| Library Management System| Inventory and access management     |
+## Project List
+
+| Project Name | Description | Link |
+|---------------|--------------|------|
+| **ATM Simulation** | Simulates basic ATM operations such as deposit, withdrawal, and balance checking. Reinforces file handling, logic flow, and user interaction. | [Open](../ATM_Simulation) |
+| **Library Management System** | A simple command-line library system for viewing, borrowing, and returning books. Built using dictionaries and conditional logic. | [Open](../Library_management) |
+| **Bank Management System (OOP)** | First OOP-based project in the series. Implements account creation, deposits, withdrawals, and updates using class-based design and JSON storage. | [Open](../OPPs_projects/Bank_management) |
 
 ## Author
 

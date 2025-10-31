@@ -37,7 +37,7 @@ This ATM system allows users to log in using a PIN, check their balance, deposit
 
 1. Save the code in a Python file, e.g., `atm_system.py`.
 2. Run the program using the command:
-```
+```bash
 python main.py
 ```
 
@@ -45,7 +45,7 @@ python main.py
 
 ## Example Interaction
 
-```
+```yaml
 Enter the pin: 1234
 Choose 1: Check Balance
 Choose 2: Deposit Money
@@ -64,7 +64,7 @@ Your current balance is: 6000 RS...
 
 ## Project Structure
 
-```
+```bash
 atm_simulation/  
 ├── atm_system.py    # Main program file
 ```
@@ -77,6 +77,17 @@ atm_simulation/
 - Record transaction history
 - Enhance security with hashed PIN storage
 - Integrate with real banking APIs for practical use
+---
+
+## Project List
+
+| Project Name | Description | Link |
+|---------------|--------------|------|
+| **Word Guess Game** | Two-player word chain game where each player must form valid words within a time limit. Demonstrates input validation, loops, and condition handling. | [Open](../Word_guess_game) |
+| **Library Management System** | A simple command-line library system for viewing, borrowing, and returning books. Built using dictionaries and conditional logic. | [Open](../Library_management) |
+| **Bank Management System (OOP)** | First OOP-based project in the series. Implements account creation, deposits, withdrawals, and updates using class-based design and JSON storage. | [Open](../OPPs_projects/Bank_management) |
+---
+
 
 ## Author
 

@@ -33,7 +33,7 @@ python main.py
 ```
 
 **Sample workflow:**
-```
+```yaml
 Welcome to Library System 📚
 
 Enter your username: Pradip
@@ -53,7 +53,7 @@ Insta star: 1
 
 ## Project Structure
 
-```
+```bash
 library-management-system/
 ├── main-Library.py     # Core application logic
 ├── map.tldr            # Visual mapping for understanding
@@ -79,12 +79,11 @@ library-management-system/
 
 This project is part of a collection of Python fundamentals projects:
 
-| Project | Description |
-|---------|-------------|
-| Word Guess Game | Interactive word guessing with logic building |
-| ATM Simulation | Banking operations simulation |
-| Library Management System | Inventory and user management |
-| Bank Management system | Simulates Working of Bank
+| Project Name | Description | Link |
+|---------------|--------------|------|
+| **Word Guess Game** | Two-player word chain game where each player must form valid words within a time limit. Demonstrates input validation, loops, and condition handling. | [Open](../Word_guess_game) |
+| **ATM Simulation** | Simulates basic ATM operations such as deposit, withdrawal, and balance checking. Reinforces file handling, logic flow, and user interaction. | [Open](../ATM_Simulation) |
+| **Bank Management System (OOP)** | First OOP-based project in the series. Implements account creation, deposits, withdrawals, and updates using class-based design and JSON storage. | [Open](../OPPs_projects/Bank_management) |
 
 **Repository:** [Raw-python-Logic_building](https://github.com/pradip-pawar1/Raw-python-Logic_building)
 
