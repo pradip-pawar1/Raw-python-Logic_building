@@ -4,10 +4,9 @@ def check_balance(deposit = 0, withraw = 0):
     card_balance -= withraw
     return card_balance
 
-def deposit_money(deposit):
-    added_mondy = deposit
-    check_balance(deposit=added_mondy)
-    print(f"\nYour {deposit} RS is added...")
+def deposit_money(amount):
+    check_balance(deposit=amount)
+    print(f"\nYour {deposit} RS is added, Current Balance {card_balance}")
 
 def withraw_money(amount):
     if amount > card_balance:
@@ -15,11 +14,11 @@ def withraw_money(amount):
         exit(login_key=False)
     else:
         check_balance(withraw=amount)
-    print(f"\nYou withrew: {amount} RS...")
+    print(f"\nYou withrew: {amount} RS. Current balance {card_balance}")
 
 def exit(login_key):
         if login_key == False:
-            raise SystemExit("System closed!")
+            raise SystemExit("Thanks for visiting!")
 
 def login(card_pin):
     attempts = 0
@@ -53,12 +52,23 @@ while True:
     match operation:
         case 1:
             print(f"\nYour current balance is: {check_balance()} RS...\n")
+
         case 2:
-            deposit = int(input("\nEnter amount: "))
-            deposit_money(deposit=deposit)
+            try:
+                deposit = int(input("\nEnter amount: "))
+            except ValueError:
+                print("Please enter amount in intiger!")
+            else:
+                deposit_money(amount=deposit)
+
         case 3:
-            amount = int(input("Enter amount: "))
-            withraw_money(amount=amount)
+            try:
+                amount = int(input("Enter amount: "))
+            except ValueError:
+                print("Please enter amount in intiger!")
+            else:
+                withraw_money(amount=amount)
+                
         case 4:
             login_key = False
             exit(login_key)
