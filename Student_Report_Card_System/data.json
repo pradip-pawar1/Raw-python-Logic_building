@@ -1,12 +1,62 @@
-{
-  "student1": [
-    {
-      "roll_no": 101,
-      "name": "Pradip",
-      "marks": {"Math": 80, "Science": 75, "English": 70},
-      "total": 225,
-      "percentage": 75.0,
-      "grade": "B"
-    }
-  ]
-}
+[
+  {
+    "Student Name": "Pradip",
+    "Roll No.": 101,
+    "Marks": {
+      "Maths": 89,
+      "Science": 82,
+      "English": 95
+    },
+    "Total Marks": 266,
+    "Percentage": 88.66666666666667,
+    "Grade": "A"
+  },
+  {
+    "Student Name": "Rani",
+    "Roll No.": 102,
+    "Marks": {
+      "Maths": 76,
+      "Science": 75,
+      "English": 85
+    },
+    "Total Marks": 236,
+    "Percentage": 78.66666666666667,
+    "Grade": "B"
+  },
+  {
+    "Student Name": "Anjali",
+    "Roll No.": 103,
+    "Marks": {
+      "Maths": 78,
+      "Science": 97,
+      "English": 89
+    },
+    "Total Marks": 264,
+    "Percentage": 88.0,
+    "Grade": "A"
+  },
+  {
+    "Student Name": "Payal",
+    "Roll No.": 104,
+    "Marks": {
+      "Maths": 76,
+      "Science": 58,
+      "English": 98
+    },
+    "Total Marks": 232,
+    "Percentage": 77.33333333333333,
+    "Grade": "B"
+  },
+  {
+    "Student Name": "Pallavi",
+    "Roll No.": 105,
+    "Marks": {
+      "Maths": 45,
+      "Science": 23,
+      "English": 34
+    },
+    "Total Marks": 102,
+    "Percentage": 34.0,
+    "Grade": "F"
+  }
+]
