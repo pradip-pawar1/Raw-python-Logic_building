@@ -1,0 +1,12 @@
+{
+  "student1": [
+    {
+      "roll_no": 101,
+      "name": "Pradip",
+      "marks": {"Math": 80, "Science": 75, "English": 70},
+      "total": 225,
+      "percentage": 75.0,
+      "grade": "B"
+    }
+  ]
+}
