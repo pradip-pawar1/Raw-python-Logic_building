@@ -1,9 +1,9 @@
 [
     {
-        "Name": "Pradip",
+        "Name": "Pradip Pawar Gorakh",
         "Age": 21,
-        "Email": "xyz@example.com",
-        "Pin": 1234,
+        "Email": "pradip.in",
+        "Pin": 1010,
         "AccountNo": 9061630662,
         "Balance": 69044
     },
@@ -22,5 +22,13 @@
         "Pin": 1235,
         "AccountNo": 166119108,
         "Balance": 55789
+    },
+    {
+        "Name": "Spyder Man USA",
+        "Age": 45,
+        "Email": "spydii.web.in",
+        "Pin": 2345,
+        "AccountNo": 375566134,
+        "Balance": 43300
     }
 ]
