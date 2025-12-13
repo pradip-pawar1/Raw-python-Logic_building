@@ -1,9 +1,13 @@
-# Word_guess_game Project
-Word_guess_game/map.tldr
-Library_management/map.tldr
+# Object Oriented Programming 
 
-# Student_Report_Card_System Project
-Student_Report_Card_System/map.tldr
-Student_Report_Card_System/plan.md
+object_oriented_programming/01_bank_management/map.tldr
+object_oriented_programming/02_oops
+object_oriented_programming/01_bank_management/banking.py
 
-Number_Analyzer/map.tldr
+# Procedural Programming
+procedural_programming/01_word_guess_game/map.tldr
+procedural_programming/02_atm_simulation/map.tldr
+procedural_programming/03_library_management/map.tldr
+procedural_programming/04_student_report_card_system/map.tldr
+procedural_programming/04_student_report_card_system/plan.md
+procedural_programming/05_number_analyzer/map.tldr

@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "Pradip",
+        "Age": 21,
+        "Email": "xyz@example.com",
+        "Pin": 1234,
+        "AccountNo": 9061630662,
+        "Balance": 69044
+    },
+    {
+        "Name": "Pradip Pawar",
+        "Age": 21,
+        "Email": "pradip@gmail.com",
+        "Pin": 1209,
+        "AccountNo": 437818050,
+        "Balance": 90000
+    },
+    {
+        "Name": "Rani Pawar",
+        "Age": 19,
+        "Email": "rani@gmail.com",
+        "Pin": 1235,
+        "AccountNo": 166119108,
+        "Balance": 55789
+    }
+]
