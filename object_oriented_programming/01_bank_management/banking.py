@@ -1,8 +1,9 @@
 import json
-import string
 import random
 from pathlib import Path
 
+# ------------------------------ || -------------------------------
+# ------------------------------ || -------------------------------
 class Utils:
     """Utility class for code reusability"""
 
@@ -19,6 +20,8 @@ class Utils:
         userdata = [i for i in Bank.data if i["AccountNo"] == self.acc_no and i["Pin"]==self.pin]
         return userdata[0]
 
+# ------------------------------ // -------------------------------
+# ------------------------------ // -------------------------------
 
 class Bank:
     """Class Bank handels things like:
@@ -32,7 +35,11 @@ class Bank:
 
     database = 'object_oriented_programming/01_bank_management/data.json'
     data = []
+    same_gen_dadabase = 'object_oriented_programming/01_bank_management/extra_genrated.json'
+    data2 = []
 
+
+# ------------------------------ // -------------------------------
     try:
         if Path(database).exists():
             with open(database) as fs:
@@ -42,13 +49,27 @@ class Bank:
     except Exception as err:
         print(f"An error occured as {err}")
 
+    try:
+        if Path(same_gen_dadabase).exists():
+            with open(same_gen_dadabase) as fs:
+                data2 = json.load(fs)
+        else:
+            print("No database found..!")
+    except Exception as err:
+        print(f"An error occured for same generated databse as {err}")
+
         
     @classmethod
     def update(self):
         with open(Bank.database, 'w') as fs:
             json.dump(Bank.data, fs, indent=4)
 
+    @classmethod
+    def addExtra(self):
+        with open(Bank.same_gen_dadabase, 'w') as fs:
+            json.dump(Bank.data2, fs, indent=4)
 
+# ------------------------------ // -------------------------------
     def create_account(self, name:str, age:int, email:str, pin:int)->dict:
         """Method takes name, age, email, pin & create new account. 
         Make sure the Pin should only conatin 4 digits."""
@@ -61,6 +82,7 @@ class Bank:
             "AccountNo":random.randint(100000000, 999999999),
             "Balance": 0
         }
+        
 
         if info['Age'] <18 or len(str(info['Pin'])) != 4:
             print("Sorry, you are not valid cadidate!")
@@ -68,12 +90,14 @@ class Bank:
             for i in info:
                 print(f"{i} : {info[i]}")
 
-            self.data.append(info)
+            Bank.data.append(info)
             Bank.update()
-            print("\nAccount created successfully")
-            print("Please note your Account No.")
-            
 
+            print("\nAccount created successfully 👍")
+            print("Please note your Account No.")
+
+            
+# ------------------------------ // -------------------------------
     def showDetails(self):
         """Show details returns a dict of details of user"""
 
@@ -86,9 +110,12 @@ class Bank:
         print("\n")
 
 
+# ------------------------------ // -------------------------------
+# ------------------------------ // -------------------------------
 class Account:
     """
-    Docstring for Account
+    This class handels account related tasks, such as,
+    Depositing money, withralling money, updating account, deleting account etc.
     """
     def depositMoney(self):
         """This function `depositMoney` added the amount in the users account."""
@@ -107,6 +134,7 @@ class Account:
                 Bank.update() # <- Calling @classmethod 
                 print("Amount deposit succesfully...")
 
+# ------------------------------ // -------------------------------    
     def witheawlMoney(self):
         """The `withrawlMoney` function withrawls the selected amount for the users account."""
         acc_no, pin = utility.get_account()
@@ -124,6 +152,7 @@ class Account:
                 Bank.update()
                 print("Amount withrawed Succesfully.")
 
+# ------------------------------ // -------------------------------
     def updateInfo(self):
         """Only 3 things can be updated:
         1. Name
@@ -173,6 +202,32 @@ class Account:
             print("You can check it\n")
 
 
+# ------------------------------ // -------------------------------
+    def deleteAcc(self):
+        """
+        This metod pops an account form the database,
+        in normal language it delets the all account info form the database.
+        It asks for account info and conformation.
+        """
+
+        acc, pin = utility.get_account()
+        user = utility.get_userdata(accountNo=acc, pin=pin)
+
+        if not user:
+            print("No data found!")
+        else:
+            check = input("Enter 'Y' for delete account else 'N': ")
+            if check == 'n' or check == 'N':
+                print('By-passed!')
+            else:
+                idx = Bank.data.index(user)
+                Bank.data.pop(idx)
+                Bank.update()
+                print("Account deteded succesfully..!")
+
+
+# ------------------------------ // -------------------------------
+# ------------------------------ // -------------------------------
 class Banking_system:
     """
     Docstring for Banking_system, which handels the Interaction + menu
@@ -192,7 +247,7 @@ class Banking_system:
             7: "Stop Runnig"
         }
 
-    
+# ------------------------------ // -------------------------------    
     def run(self):
         """Main program loop which don't stop program execution until user wants"""
         while True:
@@ -221,11 +276,16 @@ class Banking_system:
             if choice == 5:
                 account.updateInfo()
 
+            if choice == 6:
+                account.deleteAcc()
+
             if choice == 7:
                 start.stop()
 
 
 
+# ------------------------------ || -------------------------------
+# ------------------------------ || -------------------------------
 
 start = Banking_system()
 bank = Bank()
@@ -233,3 +293,5 @@ account = Account()
 utility = Utils()
 
 start.run()
+# ------------------------------ || -------------------------------
+# ------------------------------ || -------------------------------

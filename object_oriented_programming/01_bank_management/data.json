@@ -1,34 +1,10 @@
 [
     {
-        "Name": "Pradip Pawar Gorakh",
-        "Age": 21,
-        "Email": "pradip.in",
-        "Pin": 1010,
-        "AccountNo": 9061630662,
-        "Balance": 69044
-    },
-    {
-        "Name": "Pradip Pawar",
-        "Age": 21,
-        "Email": "pradip@gmail.com",
-        "Pin": 1209,
-        "AccountNo": 437818050,
-        "Balance": 90000
-    },
-    {
-        "Name": "Rani Pawar",
-        "Age": 19,
-        "Email": "rani@gmail.com",
-        "Pin": 1235,
-        "AccountNo": 166119108,
-        "Balance": 55789
-    },
-    {
-        "Name": "Spyder Man USA",
-        "Age": 45,
-        "Email": "spydii.web.in",
-        "Pin": 2345,
-        "AccountNo": 375566134,
-        "Balance": 43300
+        "Name": "Spyder man",
+        "Age": 30,
+        "Email": "soydi.in",
+        "Pin": 1245,
+        "AccountNo": 740219995,
+        "Balance": 0
     }
 ]
