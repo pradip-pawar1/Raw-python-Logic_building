@@ -35,8 +35,6 @@ class Bank:
 
     database = 'object_oriented_programming/01_bank_management/data.json'
     data = []
-    same_gen_dadabase = 'object_oriented_programming/01_bank_management/extra_genrated.json'
-    data2 = []
 
 
 # ------------------------------ // -------------------------------
@@ -49,25 +47,11 @@ class Bank:
     except Exception as err:
         print(f"An error occured as {err}")
 
-    try:
-        if Path(same_gen_dadabase).exists():
-            with open(same_gen_dadabase) as fs:
-                data2 = json.load(fs)
-        else:
-            print("No database found..!")
-    except Exception as err:
-        print(f"An error occured for same generated databse as {err}")
-
         
     @classmethod
     def update(self):
         with open(Bank.database, 'w') as fs:
             json.dump(Bank.data, fs, indent=4)
-
-    @classmethod
-    def addExtra(self):
-        with open(Bank.same_gen_dadabase, 'w') as fs:
-            json.dump(Bank.data2, fs, indent=4)
 
 # ------------------------------ // -------------------------------
     def create_account(self, name:str, age:int, email:str, pin:int)->dict:
