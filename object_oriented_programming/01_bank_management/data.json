@@ -1,10 +1,18 @@
 [
     {
-        "Name": "Spyder man",
+        "Name": "Iron man",
         "Age": 30,
-        "Email": "soydi.in",
+        "Email": "staks.in",
         "Pin": 1245,
         "AccountNo": 740219995,
         "Balance": 0
+    },
+    {
+        "Name": "Pyoush",
+        "Age": 45,
+        "Email": "pyou.com",
+        "Pin": 5678,
+        "AccountNo": 960845848,
+        "Balance": 9845
     }
 ]
