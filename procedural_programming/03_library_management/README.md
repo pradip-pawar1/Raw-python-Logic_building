@@ -79,11 +79,14 @@ library-management-system/
 
 This project is part of a collection of Python fundamentals projects:
 
-| Project Name | Description | Link |
-|---------------|--------------|------|
-| **Word Guess Game** | Two-player word chain game where each player must form valid words within a time limit. Demonstrates input validation, loops, and condition handling. | [Open](../Word_guess_game) |
-| **ATM Simulation** | Simulates basic ATM operations such as deposit, withdrawal, and balance checking. Reinforces file handling, logic flow, and user interaction. | [Open](../ATM_Simulation) |
-| **Bank Management System (OOP)** | First OOP-based project in the series. Implements account creation, deposits, withdrawals, and updates using class-based design and JSON storage. | [Open](../OPPs_projects/Bank_management) |
+
+|Sr. No | Project Name              | Link                                            |
+| ---- | ------------------------- | ----------------------------------------------- |
+| 1 | Bank Management system (OOPs)           | [View Project](../../object_oriented_programming/01_bank_management/)           |
+| 2 | ATM Simulation            | [View Project](../../procedural_programming/02_atm_simulation/)            |
+| 3 | Word Guess game | [View Project](../../procedural_programming/01_word_guess_game/) |
+| 4 | Student report card system | [View Project](../../procedural_programming/04_student_report_card_system/) |
+| 5 | Number analyser | [View Project](../../procedural_programming/05_number_analyzer/) |
 
 **Repository:** [Raw-python-Logic_building](https://github.com/pradip-pawar1/Raw-python-Logic_building)
 

@@ -81,12 +81,15 @@ atm_simulation/
 
 ## Project List
 
-| Project Name | Description | Link |
-|---------------|--------------|------|
-| **Word Guess Game** | Two-player word chain game where each player must form valid words within a time limit. Demonstrates input validation, loops, and condition handling. | [Open](../Word_guess_game) |
-| **Library Management System** | A simple command-line library system for viewing, borrowing, and returning books. Built using dictionaries and conditional logic. | [Open](../Library_management) |
-| **Bank Management System (OOP)** | First OOP-based project in the series. Implements account creation, deposits, withdrawals, and updates using class-based design and JSON storage. | [Open](../OPPs_projects/Bank_management) |
----
+
+|Sr. No | Project Name              | Link                                            |
+| ---- | ------------------------- | ----------------------------------------------- |
+| 1 | Bank Management system (OOPs)           | [View Project](../../object_oriented_programming/01_bank_management/)           |
+| 2 | Word guess Game           | [View Project](../../procedural_programming/01_word_guess_game/)            |
+| 3 | Library Management System | [View Project](../../procedural_programming/03_library_management/) |
+| 4 | Student report card system | [View Project](../../procedural_programming/04_student_report_card_system/) |
+| 5 | Number analyser | [View Project](../../procedural_programming/05_number_analyzer/) |
+
 
 
 ## Author

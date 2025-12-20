@@ -91,11 +91,14 @@ This game is part of the **[Raw-python-Logic_building](https://github.com/pradip
 
 ## Project List
 
-| Project Name | Description | Link |
-|---------------|--------------|------|
-| **ATM Simulation** | Simulates basic ATM operations such as deposit, withdrawal, and balance checking. Reinforces file handling, logic flow, and user interaction. | [Open](../ATM_Simulation) |
-| **Library Management System** | A simple command-line library system for viewing, borrowing, and returning books. Built using dictionaries and conditional logic. | [Open](../Library_management) |
-| **Bank Management System (OOP)** | First OOP-based project in the series. Implements account creation, deposits, withdrawals, and updates using class-based design and JSON storage. | [Open](../OPPs_projects/Bank_management) |
+|Sr. No | Project Name              | Link                                            |
+| ---- | ------------------------- | ----------------------------------------------- |
+| 1 | Bank Management system (OOPs)           | [View Project](../../object_oriented_programming/01_bank_management/)           |
+| 2 | ATM Simulation            | [View Project](../../procedural_programming/02_atm_simulation/)            |
+| 3 | Library Management System | [View Project](../../procedural_programming/03_library_management/) |
+| 4 | Student report card system | [View Project](../../procedural_programming/04_student_report_card_system/) |
+| 5 | Number analyser | [View Project](../../procedural_programming/05_number_analyzer/) |
+
 
 ## Author
 
