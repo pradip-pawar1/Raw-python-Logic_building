@@ -32,7 +32,7 @@ class Car(Vehicle):
 
     def start_engine(self):
         super().start_engine()
-        print("Engine started of car...")
+        print("Car engine started with key...")
 # ------------------------------ || -------------------------------
 
 class Motorcycle(Vehicle):
@@ -48,11 +48,23 @@ class Motorcycle(Vehicle):
 
     def start_engine(self):
         super().start_engine()
-        print("Engine started of motorcycle...")
+        print("Motorcycle engine started with button...")
 # ------------------------------ || -------------------------------
 
-    
+class Truck(Vehicle):
+    """Child class for Truck management inherits from vehicle"""
+    def __init__(self, brand, model, year, price, cargo_cpct):
+        super().__init__(brand, model, year, price)
 
+        self.cargo_capacity = cargo_cpct
+
+    def display_info(self):
+        super().display_info()
+        print(f"Cargo capacity is: {self.cargo_capacity} Tuns!")
+
+    def start_engine(self):
+        super().start_engine()
+        print("Truck engine started with ignition")
 
 # ------------------------------ || -------------------------------
 
@@ -128,7 +140,6 @@ class Vehicle_System:
         print("\n ------ ADD NEW MOTORCYCLE ------\n")
 
         try:
-            # brand:str, model:str, year:int, price:int, has_sidecar:str
             brand = input("Enter Brand: ")
             model = input("Enter model: ")
             year = int(input("Enter year (Ex; 2025): "))
@@ -142,6 +153,26 @@ class Vehicle_System:
             showroom.add_vehicle(motorcycle)
             # Messsage of car added
             print("Your car added to showroom sucessfully!")
+
+        except ValueError:
+            print("Invalid input. Try again!")
+
+    def add_truck_flow(self):
+        '''Handels truck flow and releted tasks'''
+
+        # Adding message to show 
+        print("\n ------ ADD NEW TRUCK ------\n")
+
+        try:
+            brand = input("Enter Brand: ")
+            model = input("Enter Model: ")
+            year = int(input("Enter year (Ex; 2025): "))
+            price = int(input("Enter price (Ex: 200000): "))
+            cargo_cpct = int(input("Enter cargo capacity(Ex; 3, 5): "))
+        
+            truck = Truck(brand, model, year, price, cargo_cpct)
+
+            showroom.add_vehicle(truck)
 
         except ValueError:
             print("Invalid input. Try again!")
@@ -174,7 +205,7 @@ class Vehicle_System:
             elif choise == 2:
                 self.add_Motorcycle_flow()
             elif choise == 3:
-                pass 
+                self.add_truck_flow()
             elif choise == 4:
                 showroom.display_vehicle()
             elif choise == 5:
@@ -186,6 +217,11 @@ class Vehicle_System:
 
 
 if __name__ == "__main__":
+    # object for showroom class
     showroom = Showroom()
+
+    # object for vehical_system with showroom
     system = Vehicle_System(showroom)
+
+    # Running main program loop 
     system.run()
