@@ -361,6 +361,7 @@ Please note your account number
 | 3 | Library Management System | [View Project](../../procedural_programming/03_library_management/) |
 | 4 | Student report card system | [View Project](../../procedural_programming/04_student_report_card_system/) |
 | 5 | Number analyser | [View Project](../../procedural_programming/05_number_analyzer/) |
+| 6 | Vehicle Management System | [View Project](../../object_oriented_programming/02_vehicle_management/)
 
 
 ### Thanks for visiting..!
