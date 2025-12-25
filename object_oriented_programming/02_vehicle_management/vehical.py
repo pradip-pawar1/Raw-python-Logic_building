@@ -1,6 +1,6 @@
 class Vehicle:
     '''Parent class'''
-    def __init__(self, brand, model, year, price):
+    def __init__(self, brand:str, model:str, year:int, price:int):
         self.brand = brand
         self.model = model
         self.year = year
@@ -21,7 +21,7 @@ class Vehicle:
 
 class Car(Vehicle):
     '''Child class inherits from Vehicle'''
-    def __init__(self, brand:str, model:str, year:int, price:int, num_doors:int)-> str:
+    def __init__(self, brand:str, model:str, year:int, price:int, num_doors:int):
         super().__init__(brand, model, year, price)
 
         self.num_doors = num_doors
@@ -31,7 +31,6 @@ class Car(Vehicle):
         print(f"Number of doors : {self.num_doors}")
 
     def start_engine(self):
-        super().start_engine()
         print("Car engine started with key...")
 # ------------------------------ || -------------------------------
 
@@ -44,26 +43,25 @@ class Motorcycle(Vehicle):
 
     def display_info(self):
         super().display_info()
-        print(f"Has side car : {self.has_sidecar}")
+        # print(f"Has side car : {self.has_sidecar}")
+        print(f"Has side car: {'Yes' if self.has_sidecar else 'No'}")
 
     def start_engine(self):
-        super().start_engine()
         print("Motorcycle engine started with button...")
 # ------------------------------ || -------------------------------
 
 class Truck(Vehicle):
     """Child class for Truck management inherits from vehicle"""
-    def __init__(self, brand, model, year, price, cargo_cpct):
+    def __init__(self, brand:str, model:str, year:int, price:int, cargo_capacity :int):
         super().__init__(brand, model, year, price)
 
-        self.cargo_capacity = cargo_cpct
+        self.cargo_capacity = cargo_capacity 
 
     def display_info(self):
         super().display_info()
-        print(f"Cargo capacity is: {self.cargo_capacity} Tuns!")
+        print(f"Cargo capacity is: {self.cargo_capacity } Tuns!")
 
     def start_engine(self):
-        super().start_engine()
         print("Truck engine started with ignition")
 
 # ------------------------------ || -------------------------------
@@ -71,29 +69,26 @@ class Truck(Vehicle):
 class Showroom():
     '''Manages all avaliable vehicles'''
     def __init__(self):
-        self.vehicals = [] # List of vehicals
+        self.vehicles = [] # List of vehicals
 
-    def add_vehicle(self, vehicle:str):
+    def add_vehicle(self, vehicles :str):
         '''Adds vehicle to showroom'''
-        self.vehicals.append(vehicle)
+        self.vehicles.append(vehicles )
 
     def display_vehicle(self):
         '''Display all vehicles'''
-        if not self.vehicals:
-            print("\nNo vehicle found: ")
+        if not self.vehicles:
+            print("\nNo vehicles found")
             return
-        
-        else:
-            print(f"\n{'='*30}")
-            print(f"Total Vehicles: {len(self.vehicals)}")
-            print(f"{'='*30}")
+
+        print(f"\n{'='*30}")
             
-            for i, vehicle in enumerate(self.vehicals, 1):
-                print(f"\nVehicle {i}:")
-                print("-" * 30)
-                vehicle.display_info()
-                vehicle.start_engine()
-                print("-" * 30)
+        for i, vehicle in enumerate(self.vehicles, 1):
+            print(f"\nVehicle {i}:")
+            print("-" * 30)
+            vehicle.display_info()
+            vehicle.start_engine()
+            print("-" * 30)
 # ------------------------------ || -------------------------------
 
 class Vehicle_System:
@@ -127,7 +122,7 @@ class Vehicle_System:
             showroom.add_vehicle(car)
             
             # Messsage of car added
-            print("Your car added to showroom sucessfully!")
+            print(f"{brand} {model} added to showroom successfully!")
 
         except ValueError:
             print("Invalid input. Try again!")
@@ -144,21 +139,28 @@ class Vehicle_System:
             model = input("Enter model: ")
             year = int(input("Enter year (Ex; 2025): "))
             price = int(input("Enter price (Ex: 200000): "))
-            has_side_car = input("Has side car? (Y/N): ")
+            has_side_car_inp = input("Has side car? (Y/N): ")
+
+            has_side_car = False
+
+            if has_side_car_inp == 'Y'.lower():
+                has_side_car = True
+                
 
             # Create motorcycle object
             motorcycle = Motorcycle(brand, model, year, price, has_side_car)
 
             # Add to showroom 
             showroom.add_vehicle(motorcycle)
+
             # Messsage of car added
-            print("Your car added to showroom sucessfully!")
+            print(f"{brand} {model} added to showroom successfully!")
 
         except ValueError:
             print("Invalid input. Try again!")
 
     def add_truck_flow(self):
-        '''Handels truck flow and releted tasks'''
+        '''Handels truck flow and related tasks'''
 
         # Adding message to show 
         print("\n ------ ADD NEW TRUCK ------\n")
@@ -168,16 +170,17 @@ class Vehicle_System:
             model = input("Enter Model: ")
             year = int(input("Enter year (Ex; 2025): "))
             price = int(input("Enter price (Ex: 200000): "))
-            cargo_cpct = int(input("Enter cargo capacity(Ex; 3, 5): "))
+            cargo_capacity  = int(input("Enter cargo capacity(Ex; 3, 5): "))
         
-            truck = Truck(brand, model, year, price, cargo_cpct)
+            truck = Truck(brand, model, year, price, cargo_capacity )
 
             showroom.add_vehicle(truck)
 
+            # Messsage of car added
+            print(f"{brand} {model} added to showroom successfully!")
+
         except ValueError:
             print("Invalid input. Try again!")
-
-
 
     def show_menu(self):
         """Display menu options"""
@@ -195,21 +198,21 @@ class Vehicle_System:
             self.show_menu()
 
             try:
-                choise = int(input("Enter your choise: "))
+                choice = int(input("Enter your choice: "))
             except ValueError:
                 print("Invalid input. Try again...")
                 continue
 
-            if choise == 1:
+            if choice == 1:
                 self.add_car_flow()
-            elif choise == 2:
+            elif choice == 2:
                 self.add_Motorcycle_flow()
-            elif choise == 3:
+            elif choice == 3:
                 self.add_truck_flow()
-            elif choise == 4:
+            elif choice == 4:
                 showroom.display_vehicle()
-            elif choise == 5:
-                print("\nThank you for choosing our showroom. Visit again!")
+            elif choice == 5:
+                print("\nThank's for choosing our showroom. Visit again!")
                 break
             else:
                 print("\n ------ Please Choose valid input ------\n!")
