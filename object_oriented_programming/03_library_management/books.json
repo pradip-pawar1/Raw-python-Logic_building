@@ -1,0 +1,481 @@
+[
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "isbn": "978-0061120084",
+    "type": "Fiction",
+    "genre": "Classic Fiction",
+    "available_copies": 5,
+    "total_copies": 5
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "isbn": "978-0451524935",
+    "type": "Fiction",
+    "genre": "Dystopian",
+    "available_copies": 4,
+    "total_copies": 4
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "978-0743273565",
+    "type": "Fiction",
+    "genre": "Classic Fiction",
+    "available_copies": 3,
+    "total_copies": 3
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "isbn": "978-0439708180",
+    "type": "Fiction",
+    "genre": "Fantasy",
+    "available_copies": 8,
+    "total_copies": 8
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "isbn": "978-0547928227",
+    "type": "Fiction",
+    "genre": "Fantasy",
+    "available_copies": 6,
+    "total_copies": 6
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "isbn": "978-0141439518",
+    "type": "Fiction",
+    "genre": "Romance",
+    "available_copies": 4,
+    "total_copies": 4
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "isbn": "978-0316769174",
+    "type": "Fiction",
+    "genre": "Classic Fiction",
+    "available_copies": 3,
+    "total_copies": 3
+  },
+  {
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "isbn": "978-0544003415",
+    "type": "Fiction",
+    "genre": "Fantasy",
+    "available_copies": 5,
+    "total_copies": 5
+  },
+  {
+    "title": "Animal Farm",
+    "author": "George Orwell",
+    "isbn": "978-0451526342",
+    "type": "Fiction",
+    "genre": "Political Satire",
+    "available_copies": 4,
+    "total_copies": 4
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "isbn": "978-0060850524",
+    "type": "Fiction",
+    "genre": "Dystopian",
+    "available_copies": 3,
+    "total_copies": 3
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "isbn": "978-0062315007",
+    "type": "Fiction",
+    "genre": "Philosophical Fiction",
+    "available_copies": 6,
+    "total_copies": 6
+  },
+  {
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "isbn": "978-0062316097",
+    "type": "Textbook",
+    "subject": "History",
+    "edition": 1,
+    "available_copies": 7,
+    "total_copies": 7
+  },
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "isbn": "978-0735211292",
+    "type": "Textbook",
+    "subject": "Self-Help",
+    "edition": 1,
+    "available_copies": 10,
+    "total_copies": 10
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "isbn": "978-0374533557",
+    "type": "Textbook",
+    "subject": "Psychology",
+    "edition": 1,
+    "available_copies": 5,
+    "total_copies": 5
+  },
+  {
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen",
+    "isbn": "978-0262033848",
+    "type": "Textbook",
+    "subject": "Computer Science",
+    "edition": 3,
+    "available_copies": 8,
+    "total_copies": 8
+  },
+  {
+    "title": "Python Crash Course",
+    "author": "Eric Matthes",
+    "isbn": "978-1593279288",
+    "type": "Textbook",
+    "subject": "Programming",
+    "edition": 2,
+    "available_copies": 12,
+    "total_copies": 12
+  },
+  {
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "isbn": "978-0132350884",
+    "type": "Textbook",
+    "subject": "Software Engineering",
+    "edition": 1,
+    "available_copies": 6,
+    "total_copies": 6
+  },
+  {
+    "title": "The Elements of Statistical Learning",
+    "author": "Trevor Hastie",
+    "isbn": "978-0387848570",
+    "type": "Textbook",
+    "subject": "Statistics",
+    "edition": 2,
+    "available_copies": 4,
+    "total_copies": 4
+  },
+  {
+    "title": "Calculus Early Transcendentals",
+    "author": "James Stewart",
+    "isbn": "978-1285741550",
+    "type": "Textbook",
+    "subject": "Mathematics",
+    "edition": 8,
+    "available_copies": 10,
+    "total_copies": 10
+  },
+  {
+    "title": "Physics for Scientists and Engineers",
+    "author": "Raymond A. Serway",
+    "isbn": "978-1133947271",
+    "type": "Textbook",
+    "subject": "Physics",
+    "edition": 9,
+    "available_copies": 8,
+    "total_copies": 8
+  },
+  {
+    "title": "Organic Chemistry",
+    "author": "Paula Yurkanis Bruice",
+    "isbn": "978-0134042282",
+    "type": "Textbook",
+    "subject": "Chemistry",
+    "edition": 8,
+    "available_copies": 6,
+    "total_copies": 6
+  },
+  {
+    "title": "Campbell Biology",
+    "author": "Jane B. Reece",
+    "isbn": "978-0321558237",
+    "type": "Textbook",
+    "subject": "Biology",
+    "edition": 10,
+    "available_copies": 9,
+    "total_copies": 9
+  },
+  {
+    "title": "National Geographic",
+    "author": "National Geographic Society",
+    "isbn": "MAG-NG-2024-01",
+    "type": "Magazine",
+    "issue_number": 1,
+    "month": "January 2024",
+    "available_copies": 15,
+    "total_copies": 15
+  },
+  {
+    "title": "TIME Magazine",
+    "author": "TIME Inc.",
+    "isbn": "MAG-TIME-2024-01",
+    "type": "Magazine",
+    "issue_number": 2,
+    "month": "February 2024",
+    "available_copies": 20,
+    "total_copies": 20
+  },
+  {
+    "title": "Scientific American",
+    "author": "Springer Nature",
+    "isbn": "MAG-SA-2024-03",
+    "type": "Magazine",
+    "issue_number": 3,
+    "month": "March 2024",
+    "available_copies": 12,
+    "total_copies": 12
+  },
+  {
+    "title": "The Economist",
+    "author": "The Economist Group",
+    "isbn": "MAG-ECO-2024-04",
+    "type": "Magazine",
+    "issue_number": 4,
+    "month": "April 2024",
+    "available_copies": 18,
+    "total_copies": 18
+  },
+  {
+    "title": "Wired",
+    "author": "Condé Nast",
+    "isbn": "MAG-WIRED-2024-05",
+    "type": "Magazine",
+    "issue_number": 5,
+    "month": "May 2024",
+    "available_copies": 10,
+    "total_copies": 10
+  },
+  {
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "isbn": "978-0307474278",
+    "type": "Fiction",
+    "genre": "Thriller",
+    "available_copies": 5,
+    "total_copies": 5
+  },
+  {
+    "title": "Gone Girl",
+    "author": "Gillian Flynn",
+    "isbn": "978-0307588371",
+    "type": "Fiction",
+    "genre": "Mystery",
+    "available_copies": 4,
+    "total_copies": 4
+  },
+  {
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "isbn": "978-0439023481",
+    "type": "Fiction",
+    "genre": "Dystopian",
+    "available_copies": 7,
+    "total_copies": 7
+  },
+  {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "isbn": "978-0441172719",
+    "type": "Fiction",
+    "genre": "Science Fiction",
+    "available_copies": 6,
+    "total_copies": 6
+  },
+  {
+    "title": "The Shining",
+    "author": "Stephen King",
+    "isbn": "978-0307743657",
+    "type": "Fiction",
+    "genre": "Horror",
+    "available_copies": 4,
+    "total_copies": 4
+  },
+  {
+    "title": "Life of Pi",
+    "author": "Yann Martel",
+    "isbn": "978-0156027328",
+    "type": "Fiction",
+    "genre": "Adventure",
+    "available_copies": 3,
+    "total_copies": 3
+  },
+  {
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "isbn": "978-1594631931",
+    "type": "Fiction",
+    "genre": "Drama",
+    "available_copies": 5,
+    "total_copies": 5
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "isbn": "978-0399590504",
+    "type": "Textbook",
+    "subject": "Memoir",
+    "edition": 1,
+    "available_copies": 8,
+    "total_copies": 8
+  },
+  {
+    "title": "The 7 Habits of Highly Effective People",
+    "author": "Stephen R. Covey",
+    "isbn": "978-1982137274",
+    "type": "Textbook",
+    "subject": "Self-Help",
+    "edition": 30,
+    "available_copies": 9,
+    "total_copies": 9
+  },
+  {
+    "title": "How to Win Friends and Influence People",
+    "author": "Dale Carnegie",
+    "isbn": "978-0671027032",
+    "type": "Textbook",
+    "subject": "Self-Help",
+    "edition": 1,
+    "available_copies": 7,
+    "total_copies": 7
+  },
+  {
+    "title": "Deep Learning",
+    "author": "Ian Goodfellow",
+    "isbn": "978-0262035613",
+    "type": "Textbook",
+    "subject": "Artificial Intelligence",
+    "edition": 1,
+    "available_copies": 10,
+    "total_copies": 10
+  },
+  {
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "isbn": "978-0135957059",
+    "type": "Textbook",
+    "subject": "Software Engineering",
+    "edition": 2,
+    "available_copies": 6,
+    "total_copies": 6
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs",
+    "author": "Harold Abelson",
+    "isbn": "978-0262510871",
+    "type": "Textbook",
+    "subject": "Computer Science",
+    "edition": 2,
+    "available_copies": 5,
+    "total_copies": 5
+  },
+  {
+    "title": "Linear Algebra and Its Applications",
+    "author": "David C. Lay",
+    "isbn": "978-0321982384",
+    "type": "Textbook",
+    "subject": "Mathematics",
+    "edition": 5,
+    "available_copies": 8,
+    "total_copies": 8
+  },
+  {
+    "title": "Artificial Intelligence: A Modern Approach",
+    "author": "Stuart Russell",
+    "isbn": "978-0136042594",
+    "type": "Textbook",
+    "subject": "Artificial Intelligence",
+    "edition": 3,
+    "available_copies": 9,
+    "total_copies": 9
+  },
+  {
+    "title": "Data Science for Business",
+    "author": "Foster Provost",
+    "isbn": "978-1449361327",
+    "type": "Textbook",
+    "subject": "Data Science",
+    "edition": 1,
+    "available_copies": 11,
+    "total_copies": 11
+  },
+  {
+    "title": "Forbes India",
+    "author": "Forbes Media",
+    "isbn": "MAG-FORBES-2024-06",
+    "type": "Magazine",
+    "issue_number": 6,
+    "month": "June 2024",
+    "available_copies": 14,
+    "total_copies": 14
+  },
+  {
+    "title": "MIT Technology Review",
+    "author": "MIT",
+    "isbn": "MAG-MIT-2024-07",
+    "type": "Magazine",
+    "issue_number": 7,
+    "month": "July 2024",
+    "available_copies": 16,
+    "total_copies": 16
+  },
+  {
+    "title": "Nature",
+    "author": "Springer Nature",
+    "isbn": "MAG-NAT-2024-08",
+    "type": "Magazine",
+    "issue_number": 8,
+    "month": "August 2024",
+    "available_copies": 13,
+    "total_copies": 13
+  },
+  {
+    "title": "The Fellowship of the Ring",
+    "author": "J.R.R. Tolkien",
+    "isbn": "978-0547928210",
+    "type": "Fiction",
+    "genre": "Fantasy",
+    "available_copies": 4,
+    "total_copies": 4
+  },
+  {
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "isbn": "978-1451673319",
+    "type": "Fiction",
+    "genre": "Dystopian",
+    "available_copies": 3,
+    "total_copies": 3
+  },
+  {
+    "title": "The Chronicles of Narnia",
+    "author": "C.S. Lewis",
+    "isbn": "978-0066238500",
+    "type": "Fiction",
+    "genre": "Fantasy",
+    "available_copies": 5,
+    "total_copies": 5
+  },
+  {
+    "title": "Becoming",
+    "author": "Michelle Obama",
+    "isbn": "978-1524763138",
+    "type": "Textbook",
+    "subject": "Biography",
+    "edition": 1,
+    "available_copies": 12,
+    "total_copies": 12
+  }
+]

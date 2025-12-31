@@ -1,0 +1,18 @@
+[
+    {
+        "Name": "Pradip",
+        "Age": 21,
+        "Email": "xyz.com",
+        "Pin": 1234,
+        "AccountNo": 44490,
+        "Book_holds": 0
+    },
+    {
+        "Name": "pradip",
+        "Age": 21,
+        "Email": "xyz.com",
+        "Pin": 1234,
+        "AccountNo": 33617,
+        "Book_holds": 0
+    }
+]
