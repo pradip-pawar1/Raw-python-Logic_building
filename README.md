@@ -26,7 +26,7 @@ The repository is continuously evolving as I explore new ideas and convert them 
 | 2 | **ATM Simulation** | Simulates basic ATM operations such as deposit, withdrawal, and balance checking. Reinforces file handling, logic flow, and user interaction. | [Open](./ATM_Simulation/README.md) |
 | 3 | **Library Management System** | A simple command-line library system for viewing, borrowing, and returning books. Built using dictionaries and conditional logic. | [Open](./Library_management/README.md) |
 | 4 | **Bank Management System (OOP)** | First OOP-based project in the series. Implements account creation, deposits, withdrawals, and updates using class-based design and JSON storage. | [Open](./OPPs_projects/Bank_management/README.md) |
-| 5 | Number Analyser | Simple python CLI based project which give some description of the number like `Factorial`, `Even/Odd`, `Sum`, `Prime` etc.| [Open](./procedural_programming/05_number_analyzer/)
+| 5 | **Number Analyser** | Simple python CLI based project which give some description of the number like `Factorial`, `Even/Odd`, `Sum`, `Prime` etc.| [Open](./procedural_programming/05_number_analyzer/)
 | 6 | **Vehicle Management System** | A Python-based vehicle showroom management system demonstrating **Object-Oriented Programming** principles including **Inheritance** and **Polymorphism** | [Open](./object_oriented_programming/02_vehicle_management/)
 
 ---
