@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "Pradip pawar",
+        "Roll No": 101,
+        "Age": 21,
+        "Grades": [
+            {
+                "Subject": "Mathematics",
+                "Marks": 0
+            },
+            {
+                "Subject": "Science",
+                "Marks": 0
+            },
+            {
+                "Subject": "English",
+                "Marks": 0
+            },
+            {
+                "Subject": "History",
+                "Marks": 0
+            }
+        ],
+        "Average": 0.0
+    }
+]
