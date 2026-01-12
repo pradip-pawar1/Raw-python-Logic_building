@@ -16,7 +16,7 @@ class Student:
         print(f"Error occured as : {err}")
 
     @classmethod
-    def __update(cls):
+    def _update(cls):
         with open(cls.database, 'w') as f:
             json.dump(cls.data, f, indent=4)
 
@@ -35,28 +35,66 @@ class Student:
         "Average": 0
         }
 
-        # Now calculate and update
-        total_marks = sum(subject["Marks"] for subject in info["Grades"])
-        info["Average"] = total_marks / len(info["Grades"])
-
         if info['Age'] <10:
             print("Sorry you are not eligible!")
             return 
         else:
+            # Updating information to show
+            new_info = {
+                "Name":info['Name'],
+                "Age":info["Age"],
+                "Roll No":info["Roll No"]
+            }
+
             print("Please verify your details!")
-            for key, value in info.items():
+
+            # show info
+            for key, value in new_info.items():
                 print(f"{key} : {value}")
 
+            # conformation of creation
             choice = input("Enter 'Y' if it's corrrect: ")
-            if choice == 'Y'.capitalize():
+            if choice == 'Y'.lower():
                 Student.data.append(info)
-                Student.__update()
+                Student._update()
 
                 print("\nYou added in database 👍")
             else:
                 print("System stoped. Try again...!")
 
+    def find_student(self, name:str, roll_no:int) -> dict:
+        '''Search student into database'''
+        student = [i for i in self.data if i['Name']==name and i['Roll No']==roll_no]
+        student = student[0]
+        return student
 
+class Marks:
+    '''This class handels marks and grades related tasks'''
+    def add_marks(self, 
+                  name:str, 
+                  roll_no:int, 
+                  marks:dict):
+        '''Method add marks of the students'''
+        student = main.find_student(name, roll_no)
+
+        if student is None:
+            print("Student not found.")
+            return
+    
+        # Update marks for each subject
+        for grade in student["Grades"]:
+            subject_name = grade["Subject"]
+            if subject_name in marks:
+                grade["Marks"] = marks[subject_name]
+        
+        # Recalculate average
+        total_marks = sum(grade["Marks"] for grade in student["Grades"])
+        student["Average"] = round(total_marks / len(student["Grades"]), 2)
+        
+        main._update()
+        print(f"Marks updated successfully for {name}.")
+        
+    
 
 class Studentsystem:
     '''Handel UI and menu of the system.'''
@@ -70,31 +108,55 @@ class Studentsystem:
             6: "Stop loop"
         }
 
+    def student_credentials(self):
+        '''Search a student from database'''
+        print("\n--- Enter details ---")
+        try:
+            name = input("Enter name: ")
+            roll_no = int(input("Enter roll No: "))
+            return name, roll_no
+
+        except Exception as err:
+            print(f"Error occured as {err}")
+
     def show_menu(self):
         """Display menu options"""
         print("\n" + "="*30)
         print("    STUDENT GRADE SYSTEM")
-        print("="*30)
+        print("="*30 + "\n")
         for key, value in self.menu.items():
             print(f"{key}. {value}")
-        print("-"*30)
+        print("-"*30+"\n")
 
     def create_account_flow(self):
         '''Handel account creation flow'''
         print("\n--- Add new student ---")
         try:
-            name = input("Enter name: ")
-            roll_no = int(input("Enter roll No: "))
+            name, roll_no = self.student_credentials()
             age = int(input("Enter age: "))
 
-            main.add_student(name=name, roll_no= roll_no, age=age)
+            if not name or not roll_no:
+                print("Invalid info")
+            else:
+                main.add_student(name=name, roll_no= roll_no, age=age)
 
         except ValueError:
             print("Ivalid input. Try again")
 
-        
+    def add_marks_flow(self):
+        '''Add marks of the student'''
+        try:
+            name, roll_no = self.student_credentials()
+            marks = {
+                "Mathematics": float(input("Maths marks (ex:87.90): ")),
+                "Science": float(input("Science marks (ex:87.90): ")),
+                "English": float(input("English marks (ex:87.90): ")),
+                "History": float(input("History marks (Ex: 89.90): "))
+            }
 
-
+            mark_cls.add_marks(name, roll_no, marks)
+        except Exception as err:
+            print(f"Error occured as {err}")  
 
     def run(self):
         '''Main program loop'''
@@ -109,15 +171,21 @@ class Studentsystem:
                 continue
             
 
-            if choice == 1:
+            if choice > 6 or choice < 1:
+                print("Out of range.\nSelect valid option...")
+            
+            elif choice == 1:
                 self.create_account_flow()
 
             elif choice == 6:
                 print("Thanks for choosing us..")
                 break
+            elif choice == 2:
+                self.add_marks_flow()
 
 
 if __name__ == '__main__':
     main = Student()
+    mark_cls = Marks()
     system = Studentsystem()
     system.run()
